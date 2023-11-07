@@ -1,6 +1,6 @@
 const { DataTypes, Model } = require ('sequelize')
 
-const AREA_TABLE = 'area'
+const AREA_TABLE = 'areas'
 
 const AreaSchema = {
     id:{

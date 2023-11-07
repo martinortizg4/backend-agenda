@@ -1,12 +1,12 @@
 'use strict';
 
 const { DataTypes } = require('sequelize');
-const { PLANNER_TABLE } =  require('./../models/planner.model')
+const { AGENDA_TABLE } =  require('../models/agenda.model')
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable(PLANNER_TABLE, {
+    await queryInterface.createTable(AGENDA_TABLE, {
       id:{
         type: Sequelize.DataTypes.INTEGER,
         autoIncrement: true,
@@ -43,6 +43,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable(PLANNER_TABLE);
+    await queryInterface.dropTable(AGENDA_TABLE);
   },
 };

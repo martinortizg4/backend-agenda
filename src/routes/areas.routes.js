@@ -1,5 +1,5 @@
 const {Router} = require('express')
-const AreaController = require ('./../controllers/area.controller')
+const AreaController = require ('../controllers/area.controller')
 
 const router = Router()
 

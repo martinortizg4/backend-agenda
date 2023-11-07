@@ -1,8 +1,8 @@
 const { DataTypes, Model } = require ('sequelize')
 
-const PLANNER_TABLE = 'planner'
+const AGENDA_TABLE = 'agendas'
 
-const PlannerSchema = {
+const AgendaSchema = {
     id:{
         type:DataTypes.INTEGER,
         autoIncrement: true,
@@ -35,13 +35,13 @@ const PlannerSchema = {
     }
 } 
 
-class Planner extends Model{
+class Agenda extends Model{
     static associate(models){
 
     }
     static config(sequelize){
-        return {sequelize, tableName: PLANNER_TABLE, modelName: 'Planner', timestamps:false}
+        return {sequelize, tableName: AGENDA_TABLE, modelName: 'Agenda', timestamps:false}
     }
 }
 
-module.exports = {PLANNER_TABLE, PlannerSchema, Planner}
+module.exports = {AGENDA_TABLE, AgendaSchema, Agenda}

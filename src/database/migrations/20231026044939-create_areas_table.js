@@ -1,7 +1,7 @@
 'use strict';
 
 const { DataTypes } = require('sequelize');
-const { AREA_TABLE } =  require('./../models/area.model')
+const { AREA_TABLE } =  require('../models/area.model')
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
